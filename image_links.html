@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        header, nav, main {
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .grid img {
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Image Links</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website! Check out this cool technology image:</p>
+            <a href="https://tedsa.ir/wp-content/uploads/2021/02/tolid-mohtava.jpg"><img src="https://tedsa.ir/wp-content/uploads/2021/02/tolid-mohtava.jpg" alt="Technology"></a>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <a href="https://wallpapercave.com/wp/wp2611170.jpg"><img src="https://wallpapercave.com/wp/wp2611170.jpg" alt="Nature"></a>
+                <a href="https://wallpapercave.com/wp/wp3155700.jpg"><img src="https://wallpapercave.com/wp/wp3155700.jpg" alt="Nature"></a>
+                <a href="https://wallpapercave.com/wp/wp3155700.jpg"><img src="https://wallpapercave.com/wp/wp3155700.jpg" alt="Nature"></a>
+            </div>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="https://alrasub.com/wp-content/uploads/2014/02/junk.png"><img src="https://alrasub.com/wp-content/uploads/2014/02/junk.png" alt="Food 1"></a> Food 1</li>
+                <li><a href="https://mommyish.com/wp-content/uploads/2014/05/fast-food-combo.jpg"><img src="https://mommyish.com/wp-content/uploads/2014/05/fast-food-combo.jpg" alt="Food 2"></a> Food 2</li>
+                <li><a href="https://www.shutterstock.com/image-photo/golden-brown-fried-chicken-served-260nw-63266185.jpg"><img src="https://www.shutterstock.com/image-photo/golden-brown-fried-chicken-served-260nw-63266185.jpg" alt="Food 3"></a> Food 3</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+
